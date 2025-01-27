@@ -1,0 +1,10 @@
+[
+  {
+    "username": "nuevoUsuario",
+    "password": "miContraseña",
+    "genres": [
+      "28",
+      "12"
+    ]
+  }
+]

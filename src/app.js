@@ -2,7 +2,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const authRoutes = require("../routes/auth");
-require('dotenv').config(); // Asegúrate de la ruta correcta
+require('dotenv').config();
+
+const corsOptions = {
+    origin: "https://front-movies-production.up.railway.app", // Cambia a la URL de tu frontend
+    methods: ["GET", "POST"],
+  };
+app.use(cors(corsOptions));
 
 const app = express();
 app.use(cors());
